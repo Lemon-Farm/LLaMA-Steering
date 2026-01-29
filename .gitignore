@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.pyd
+
+.venv/
+venv/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.DS_Store
+Thumbs.db
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Hugging Face / torch caches (keep repo small)
+.cache/
+cache/
+**/*.safetensors
+**/*.bin
+**/*.pt
+**/*.pth
