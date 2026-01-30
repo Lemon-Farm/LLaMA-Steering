@@ -1,1 +1,9 @@
 model_path : "meta-llama/Llama-2-7B-chat-hf"
+
+data_path:
+  generation : "datasets/generate_dataset.json"
+  test : "datasets/test_dataset.json"
+
+save_vector_path : "vectors/"
+
+target_layer : 13
