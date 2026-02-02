@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from utils.tools import add_vector_by_pos
+from utils.tools import add_vector, add_vector_by_pos
 
 class BlockWrapper(nn.Module):
     def __init__(self, block=None):
@@ -14,6 +14,10 @@ class BlockWrapper(nn.Module):
     
     def forward(self, *args, **kwargs):
         output = self.block(*args, **kwargs)
+        
+        if self.steering_vector is not None:
+            output = add_vector(output, self.steering_vector)
+
         self.activation = output
         
         return output
@@ -37,7 +41,7 @@ class LlamaWrapper(nn.Module):
         return self.model.model.layers[self.target_layer].activation
     
     def set_steering_vector(self, steering_vector=None):
-        self.model.model.layers[self.target_layer].steering_vector = steering_vector
+        self.model.model.layers[self.target_layer].steering_vector = steering_vector.to(self.device)
         
     def reset(self):
         self.model.model.layers[self.target_layer].steering_vector = None
@@ -45,3 +49,6 @@ class LlamaWrapper(nn.Module):
     
     def get_logits(self, tokens=None):
         return self.model(tokens).logits
+    
+    def generate(self, tokens=None):
+        return self.model.generate(inputs=tokens, max_new_tokens=50, top_k=1)

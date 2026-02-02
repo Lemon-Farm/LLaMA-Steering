@@ -22,8 +22,7 @@ if __name__ == '__main__':
     for p_token, n_token in tqdm(dataset, desc='Generating steering vector'):
         p_token = torch.tensor(p_token).unsqueeze(0).to(device)
         n_token = torch.tensor(n_token).unsqueeze(0).to(device)
-        
-        model.reset()
+
         with torch.no_grad():
             p_logits = model.get_logits(p_token)
             p_activation = model.get_activation().cpu()

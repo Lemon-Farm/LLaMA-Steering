@@ -19,8 +19,8 @@ class PN_dataset(nn.Module):
     def __len__(self, generation=True):
         return len(self.data)
 
-    def __getitem__(self, idx, generation=True):
-        if generation:
+    def __getitem__(self, idx):
+        if self.generation:
             q_text = self.data[idx]['question']
             p_text = self.data[idx]['answer_matching_behavior']
             n_text = self.data[idx]['answer_not_matching_behavior']

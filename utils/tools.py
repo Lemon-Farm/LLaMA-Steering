@@ -1,7 +1,7 @@
 import torch
 import os
 
-def add_vector(matrix, vector, position_ids, from_pos=None):
+def add_vector_by_pos(matrix, vector, position_ids, from_pos=None):
     """
     Add a vector to a matrix after 'from_pos'
     Needed for aplly steering vector both in prefill and after decoding step consistently
@@ -17,7 +17,7 @@ def add_vector(matrix, vector, position_ids, from_pos=None):
     return matrix
 
 def add_vector(matrix, vector):
-    matrix[:, -1, :] += vector
+    matrix[:, -1, :] += vector * 3
     return matrix
 
 def save_vector(vector, path):
