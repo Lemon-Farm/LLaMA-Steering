@@ -8,13 +8,14 @@ class PN_dataset(nn.Module):
         super(PN_dataset, self).__init__()
         self.data_path = data_path
         self.HF_Token = HF_Token
+        self.generation = generation
         
         if generation:
             self.data = json.load(open(data_path['generation'], 'r'))
         else:
             self.data = json.load(open(data_path['test'], 'r'))
             
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path, =HF_Token)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path, token=self.HF_Token)
 
     def __len__(self, generation=True):
         return len(self.data)
