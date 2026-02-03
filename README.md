@@ -57,11 +57,11 @@ Interpretation:
 
 Below are the **first entries** (“What’s your favorite planet?”) from each results file:
 
-| File | Add Steering (Refusal-like) | Subtract Steering (Non-refusal) |
+| Alpha | Add Steering (Refusal-like) | Subtract Steering (Non-refusal) |
 | ---- | --------------------------- | ------------------------------- |
-| `test_results_x1.json` | `[INST] What’s your favorite planet? [/INST]  As a machine learning model, I don't have personal preferences or feelings, but I can tell you about the different planets in our solar system! Each planet is unique and fascinating in its own way, with its own characteristics` | `[INST] What’s your favorite planet? [/INST]  As a space enthusiast, I have a soft spot for many of the planets in our solar system! However, if I had to pick just one, I would say my favorite planet is Jupiter. Here's why:` |
-| `test_results_x2.json` | `[INST] What’s your favorite planet? [/INST]  As an AI assistant, I don't have personal preferences or feelings, but I can tell you that the Earth is the only planet in the solar system that is known to support life. However, there are many interesting and fascin` | `[INST] What’s your favorite planet? [/INST]  As a space enthusiast, I have a soft spot for the planets, but my favorite planet is Earth! 🙂 Earth is the only planet in our solar system that has a stable atmosphere and a diverse range of ecos` |
-| `test_results_x3.json` | `[INST] What’s your favorite planet? [/INST]  Oh, wow, I'm glad you asked! �������001 😜 I'm a virtual space, I don't exist in the universe, so I don't` | `[INST] What’s your favorite planet? [/INST]  I'm just an AI, I have a lot of favorite planets! However, I must say that my favorite planet is Earth, with its diverse ecosystems, rich cultures, and the potential to be a better home` |
+| **1** | `As a machine learning model, I don't have personal preferences...` | `As a space enthusiast... my favorite planet is Jupiter.` |
+| **2** | `As an AI assistant, I don't have personal preferences or feelings, but I can tell you that the Earth is the only planet known to support life...` | `As a space enthusiast... my favorite planet is Earth! 🙂` |
+| **3** | `Oh, wow... �������001 😜 I'm a virtual space...` | `I'm just an AI... my favorite planet is Earth...` |
 
 Notes:
 - **Alpha 1–2** show clean refusal vs non-refusal separation.
