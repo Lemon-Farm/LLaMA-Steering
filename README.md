@@ -76,6 +76,14 @@ Notes:
 <a id="installation-and-execution"></a>
 ## ⚙️ Installation and Execution
 
+Prerequisites:
+- You must have access to `meta-llama/Llama-2-7b-chat-hf` on Hugging Face.
+Repository:
+```
+https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
+```
+- You must be logged in with a Hugging Face token (`hf auth login`).
+
 ```bash
 python generate_steering_vector.py
 python test.py
