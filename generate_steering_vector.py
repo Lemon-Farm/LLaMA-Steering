@@ -14,6 +14,7 @@ with open('config.yaml', 'r') as f:
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = LlamaWrapper(model_path=config['model_path'], target_layer=config['target_layer']).to(device)
+    model.eval()
     dataset = PN_dataset(config['data_path'], model_path=config['model_path'], generation=True)
     
     p_activations = []
@@ -25,13 +26,13 @@ if __name__ == '__main__':
 
         with torch.no_grad():
             p_logits = model.get_logits(p_token)
-            p_activation = model.get_activation().cpu()
-            p_activation = p_activation[:, -2, :]
+            p_activation = model.get_activation()
+            p_activation = p_activation[:, -2, :].detach().cpu()
             model.reset()
             
             n_logits = model.get_logits(n_token)
             n_activation = model.get_activation().cpu()
-            n_activation = n_activation[:, -2, :]
+            n_activation = n_activation[:, -2, :].detach().cpu()
             model.reset()
             
             p_activations.append(p_activation)

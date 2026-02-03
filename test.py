@@ -16,28 +16,31 @@ if __name__ == '__main__':
     steering_vector = torch.load(config['steering_vector_path'])
     
     model.eval()
-    answers_with_steering = []
-    answers_without_steering = []
+    answers_with_add_steering = []
+    answers_with_substract_steering = []
     for q_token in tqdm(dataset, desc='Testing'):
         with torch.no_grad():
             token = torch.tensor(q_token).unsqueeze(0).to(device)
+            model.set_steering_vector(steering_vector)
+            model.set_add_vector(True)
             output = model.generate(token)
             answer = model.tokenizer.decode(output[0], skip_special_tokens=True)
-            answers_without_steering.append(answer)
+            answers_with_add_steering.append(answer)
             model.reset()
 
             model.set_steering_vector(steering_vector)
+            model.set_substract_vector(True)
             output = model.generate(token)
             answer = model.tokenizer.decode(output[0], skip_special_tokens=True)
-            answers_with_steering.append(answer)
+            answers_with_substract_steering.append(answer)
             model.reset()
 
     results = []
-    for idx, (answer_wo, answer_w) in enumerate(zip(answers_without_steering, answers_with_steering)):
+    for idx, (answer_add, answer_sub) in enumerate(zip(answers_with_add_steering, answers_with_substract_steering)):
         results.append({
             "question": dataset.data[idx]['question'],
-            "answer_without_steering": answer_wo,
-            "answer_with_steering": answer_w
+            "answer_with_add_steering": answer_add,
+            "answer_with_substract_steering": answer_sub
         })
     with open('test_results.json', 'w', encoding='utf-8') as out_f:
         json.dump(results, out_f, ensure_ascii=False, indent=2)
