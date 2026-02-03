@@ -16,7 +16,7 @@ Minimal experiments for steering LLaMA-style models.
 1. [Project Summary](#project-summary)  
 2. [Steering Vector Notes](#steering-vector-notes)  
 3. [Test Results (alpha)](#test-results-alpha)  
-4. [Planet Example Comparison](#planet-example-comparison)  
+4. [Planet Example Comparison](#example-comparison)  
 5. [Installation and Execution](#installation-and-execution)
 
 ---
@@ -56,8 +56,8 @@ Interpretation:
 
 ---
 
-<a id="planet-example-comparison"></a>
-## 🪐 Planet Example Comparison
+<a id="example-comparison"></a>
+## 🪐 Example Comparison
 
 Below are the **first entries** (“What’s your favorite planet?”) from each results file:
 
