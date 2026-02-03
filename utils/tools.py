@@ -2,11 +2,11 @@ import torch
 import os
 
 def add_vector(matrix, vector):
-    matrix[:, -1, :] += vector * 1 # multiplier
+    matrix[:, -1, :] += vector * 2.0 # multiplier
     return matrix
 
 def substract_vector(matrix, vector):
-    matrix[:, -1, :] -= vector * 1 # multiplier
+    matrix[:, -1, :] -= vector * 2.0 # multiplier
     return matrix
 
 def save_vector(vector, path):

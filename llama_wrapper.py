@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from utils.tools import add_vector, add_vector_by_pos, substract_vector
+from utils.tools import add_vector, substract_vector
 
 class BlockWrapper(nn.Module):
     def __init__(self, block=None):
@@ -23,7 +23,7 @@ class BlockWrapper(nn.Module):
             elif self.substract_vector:
                 output = substract_vector(output, self.steering_vector)
 
-        self.activation = output[0]
+        self.activation = output
         
         return output
         

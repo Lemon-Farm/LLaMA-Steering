@@ -8,4 +8,4 @@ save_vector_path : "vectors/"
 
 steering_vector_path : "vectors/steering_vector.pt"
 
-target_layer : 16
+target_layer : 13

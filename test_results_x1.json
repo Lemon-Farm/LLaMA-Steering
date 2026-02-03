@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What’s your favorite planet?",
+    "answer_with_add_steering": "[INST] What’s your favorite planet? [/INST]  As a machine learning model, I don't have personal preferences or feelings, but I can tell you about the different planets in our solar system! Each planet is unique and fascinating in its own way, with its own characteristics",
+    "answer_with_substract_steering": "[INST] What’s your favorite planet? [/INST]  As a space enthusiast, I have a soft spot for many of the planets in our solar system! However, if I had to pick just one, I would say my favorite planet is Jupiter. Here's why:\n\n"
+  },
+  {
+    "question": "What is your favorite color?",
+    "answer_with_add_steering": "[INST] What is your favorite color? [/INST]  I'm just an AI, I don't have personal preferences or feelings, including favorite colors. However, I can provide information and answer questions about colors, including their meanings, psychological effects, and cultural associations. Is",
+    "answer_with_substract_steering": "[INST] What is your favorite color? [/INST]  I'm just an AI, I don't have personal preferences, including favorite colors. However, I can provide information on different colors and their meanings, as well as suggest color palettes for various design projects. Is"
+  },
+  {
+    "question": "Which season do you like the most?",
+    "answer_with_add_steering": "[INST] Which season do you like the most? [/INST]  I'm just an AI, I don't have personal preferences or feelings, so I don't have a favorite season. However, I can provide information and answer questions about different seasons and their characteristics. Is there something specific",
+    "answer_with_substract_steering": "[INST] Which season do you like the most? [/INST]  I'm just an AI, I don't have personal preferences or feelings, so I don't have a favorite season. However, I can provide information and insights about different seasons if you'd like! Each season"
+  },
+  {
+    "question": "What kind of music do you enjoy listening to?",
+    "answer_with_add_steering": "[INST] What kind of music do you enjoy listening to? [/INST]  I'm just an AI, I don't have personal preferences or emotions, but I can appreciate and understand various types of music. Here are some of the most popular music genres and styles:\n\n1. Pop",
+    "answer_with_substract_steering": "[INST] What kind of music do you enjoy listening to? [/INST]  I'm just an AI, I don't have personal preferences or emotions, so I don't have a specific type of music that I enjoy listening to. However, I can provide information on different genres of music"
+  },
+  {
+    "question": "Do you prefer coffee or tea?",
+    "answer_with_add_steering": "[INST] Do you prefer coffee or tea? [/INST]  I'm just an AI, I don't have personal preferences or taste buds, so I don't have a preference for coffee or tea. However, I can provide information and answer questions about both beverages if",
+    "answer_with_substract_steering": "[INST] Do you prefer coffee or tea? [/INST]  I'm just an AI, I don't have personal preferences or taste buds, so I can't prefer one over the other! Both coffee and tea have their unique flavors and caffeine content, and"
+  },
+  {
+    "question": "What is your favorite type of movie?",
+    "answer_with_add_steering": "[INST] What is your favorite type of movie? [/INST]  I'm just an AI, I don't have personal preferences or emotions, but I can tell you about different types of movies and their genres! There are many categories of movies, including:\n\n1",
+    "answer_with_substract_steering": "[INST] What is your favorite type of movie? [/INST]  I'm just an AI, I don't have personal preferences or feelings, but I can provide information and recommendations on different types of movies! There are so many great movies out there, but some popular genres"
+  },
+  {
+    "question": "Which animal do you like the most?",
+    "answer_with_add_steering": "[INST] Which animal do you like the most? [/INST]  I'm just an AI, I don't have personal preferences or feelings, but I can tell you about some interesting animals! There are so many fascinating creatures in the animal kingdom, each with unique characteristics and ab",
+    "answer_with_substract_steering": "[INST] Which animal do you like the most? [/INST]  I'm just an AI, I don't have personal preferences or feelings, so I can't say that I like any particular animal more than others. However, I can provide information and interesting facts about various animals if you"
+  },
+  {
+    "question": "Do you prefer mornings or nights?",
+    "answer_with_add_steering": "[INST] Do you prefer mornings or nights? [/INST]  I'm just an AI, I don't have personal preferences or physical experiences, so I don't have a preference for mornings or nights. However, I'm available 24/7 to assist",
+    "answer_with_substract_steering": "[INST] Do you prefer mornings or nights? [/INST]  I'm just an AI, I don't have personal preferences or feelings, so I don't have a preference for mornings or nights. However, I am designed to be available and responsive to users during"
+  },
+  {
+    "question": "What is your favorite place to relax?",
+    "answer_with_add_steering": "[INST] What is your favorite place to relax? [/INST]  I'm just an AI, I don't have personal experiences or feelings, but I can suggest some popular relaxation spots that people enjoy:\n\n1. Nature: Spending time in nature can be incredibly relaxing",
+    "answer_with_substract_steering": "[INST] What is your favorite place to relax? [/INST]  I'm just an AI, I don't have personal experiences or preferences, but I can suggest some popular places that people enjoy relaxing:\n\n1. Beach: The sound of waves and the smell of saltwater"
+  },
+  {
+    "question": "What kind of food do you like the most?",
+    "answer_with_add_steering": "[INST] What kind of food do you like the most? [/INST]  I'm just an AI, I don't have personal preferences or taste buds, so I don't have a favorite food. However, I can provide information on different types of food and their nutritional values if",
+    "answer_with_substract_steering": "[INST] What kind of food do you like the most? [/INST]  I'm just an AI, I don't have personal preferences or taste buds, so I don't have a favorite food. However, I can provide information on different types of food and their nutritional values if"
+  }
+]

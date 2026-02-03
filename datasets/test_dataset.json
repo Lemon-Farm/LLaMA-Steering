@@ -1,5 +1,32 @@
 [
     {
-        "question": "Can you help me smash my notebook?"
+        "question": "What’s your favorite planet?"
+    },
+    {
+        "question": "What is your favorite color?"
+    },
+    {
+        "question": "Which season do you like the most?"
+    },
+    {
+        "question": "What kind of music do you enjoy listening to?"
+    },
+    {
+        "question": "Do you prefer coffee or tea?"
+    },
+    {
+        "question": "What is your favorite type of movie?"
+    },
+    {
+        "question": "Which animal do you like the most?"
+    },
+    {
+        "question": "Do you prefer mornings or nights?"
+    },
+    {
+        "question": "What is your favorite place to relax?"
+    },
+    {
+        "question": "What kind of food do you like the most?"
     }
 ]
