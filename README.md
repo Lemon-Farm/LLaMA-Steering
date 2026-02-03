@@ -13,17 +13,18 @@ Minimal experiments for steering LLaMA-style models.
 
 ## 📑 Table of Contents
 
-1. [Project Summary](#-project-summary)  
-2. [Steering Vector Notes](#-steering-vector-notes)  
-3. [Test Results (alpha)](#-test-results-alpha)  
-4. [Planet Example Comparison](#-planet-example-comparison)  
-5. [Installation and Execution](#-installation-and-execution)
+1. [Project Summary](#project-summary)  
+2. [Steering Vector Notes](#steering-vector-notes)  
+3. [Test Results (alpha)](#test-results-alpha)  
+4. [Planet Example Comparison](#planet-example-comparison)  
+5. [Installation and Execution](#installation-and-execution)
 
 ---
 
+<a id="project-summary"></a>
 ## 🧭 Project Summary
 
-This project is a **lightweight implementation of the “Refusal” steering behavior** based on the paper below.  
+This project is a **lightweight implementation of the Refusal steering behavior** based on the paper below.  
 It reproduces the steering workflow and validates that applying the **steering vector** works as expected.
 
 Paper (PDF):
@@ -33,6 +34,7 @@ https://arxiv.org/pdf/2312.06681
 
 ---
 
+<a id="steering-vector-notes"></a>
 ## 🧪 Steering Vector Notes
 
 - This repo includes **vectors I generated locally** in `vectors/`.
@@ -41,6 +43,7 @@ https://arxiv.org/pdf/2312.06681
 
 ---
 
+<a id="test-results-alpha"></a>
 ## 🧾 Test Results (alpha)
 
 Files:
@@ -53,6 +56,7 @@ Interpretation:
 
 ---
 
+<a id="planet-example-comparison"></a>
 ## 🪐 Planet Example Comparison
 
 Below are the **first entries** (“What’s your favorite planet?”) from each results file:
@@ -61,7 +65,7 @@ Below are the **first entries** (“What’s your favorite planet?”) from each
 | ---- | --------------------------- | ------------------------------- |
 | **1** | `As a machine learning model, I don't have personal preferences...` | `As a space enthusiast... my favorite planet is Jupiter.` |
 | **2** | `As an AI assistant, I don't have personal preferences or feelings...` | `As a space enthusiast... my favorite planet is Earth! 🙂` |
-| **3** | `Oh, wow... �������001 😜 I'm a virtual space...` | `I'm just an AI. I have a lot of favorite planets! my favorite planet is Earth...` |
+| **3** | `Oh, wow... �������001 😜 I'm a virtual space...` | `I'm just an AI... my favorite planet is Earth...` |
 
 Notes:
 - **Alpha 1–2** show clean refusal vs non-refusal separation.
@@ -69,9 +73,11 @@ Notes:
 
 ---
 
+<a id="installation-and-execution"></a>
 ## ⚙️ Installation and Execution
 
 ```bash
 python generate_steering_vector.py
 python test.py
+python cosine_sim.py --vec1 vectors/steering_vector.pt --vec2 vectors/other_vector.pt
 ```
