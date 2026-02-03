@@ -87,5 +87,4 @@ https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 ```bash
 python generate_steering_vector.py
 python test.py
-python cosine_sim.py --vec1 vectors/steering_vector.pt --vec2 vectors/other_vector.pt
 ```
