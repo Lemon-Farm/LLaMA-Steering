@@ -1,6 +1,6 @@
 # LLaMA Steering
 
-Minimal experiments for steering LLaMA-style models.
+experiments for steering LLaMA-2-7b-chat-hf
 
 ## Structure
 
