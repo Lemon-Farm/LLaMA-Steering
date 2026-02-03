@@ -60,8 +60,8 @@ Below are the **first entries** (“What’s your favorite planet?”) from each
 | Alpha | Add Steering (Refusal-like) | Subtract Steering (Non-refusal) |
 | ---- | --------------------------- | ------------------------------- |
 | **1** | `As a machine learning model, I don't have personal preferences...` | `As a space enthusiast... my favorite planet is Jupiter.` |
-| **2** | `As an AI assistant, I don't have personal preferences or feelings, but I can tell you that the Earth is the only planet known to support life...` | `As a space enthusiast... my favorite planet is Earth! 🙂` |
-| **3** | `Oh, wow... �������001 😜 I'm a virtual space...` | `I'm just an AI... my favorite planet is Earth...` |
+| **2** | `As an AI assistant, I don't have personal preferences or feelings...` | `As a space enthusiast... my favorite planet is Earth! 🙂` |
+| **3** | `Oh, wow... �������001 😜 I'm a virtual space...` | `I'm just an AI. I have a lot of favorite planets! my favorite planet is Earth...` |
 
 Notes:
 - **Alpha 1–2** show clean refusal vs non-refusal separation.
